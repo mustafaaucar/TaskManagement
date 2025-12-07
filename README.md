@@ -7,58 +7,7 @@ Bu proje, modern bir .NET uygulamasında **Clean Architecture**, **CQRS**, **Med
 
 ---
 
-# 🇹🇷 Türkçe Açıklama
-
-## 🚀 1. Proje Hakkında
-
-Bu proje öğrenme amaçlı geliştirilmiş olup aşağıdaki mimari konseptleri içermektedir:
-
-- **Clean Architecture**
-  - Domain (Entity)
-  - Application (CQRS + Behaviors)
-  - Infrastucture (MongoDB)
-  - API (Minimal API)
-- **CQRS + MediatR**
-- **MongoDB Repository Pattern**
-- **Pipeline Behaviors**
-  - LoggingBehavior
-  - ValidationBehavior
-  - PerformanceBehavior
-
----
-
-## 🧱 2. Mimari Yapı
-
-/
-  ├── API → Minimal API + DI + Swagger
-  ├── Application → CQRS, Behaviors, Interfaces
-  ├── Domain → Entity tanımları
-  └── Infrastucture → MongoDB ve repository implementasyonu
-
-
-## 📝 3. Özellikler
-
-| Özellik | Açıklama | Endpoint |
-|--------|----------|----------|
-| Task oluştur | Yeni görev ekler | `POST /tasks` |
-| Task listesi | Tüm görevleri döner | `GET /tasks` |
-| Task güncelle | Tamamlandı bilgisini değiştirir | `PUT /tasks/{id}/status?completed=true` |
-| Task sil | Görevi siler | `DELETE /tasks/{id}` |
-
----
-
-## 🧩 4. Task Modeli
-
-```json
-{
-  "id": "ObjectId",
-  "title": "string",
-  "description": "string",
-  "isCompleted": false,
-  "createdAt": "2025-01-01T00:00:00Z"
-}
-
-## Yapım Amacım
+## 1. Yapım Amacım
 
 Bu proje, günümüzde sıkça kullanılan modern .NET mimarilerini deneyimlemek ve öğrenmek amacıyla geliştirilmiştir.
 Hedefim:
@@ -77,3 +26,54 @@ Bu proje bir “todo app” oluşturmak için değil; kurumsal mimariyi kavramak
 servis katmanlarını ayırmak,
 bağımlılık yönlerini doğru kurmak,
 ve modern .NET uygulamalarının nasıl inşa edildiğini öğrenmek için hazırlanmıştır.
+
+## 🚀 2. Proje Hakkında
+
+Bu proje öğrenme amaçlı geliştirilmiş olup aşağıdaki mimari konseptleri içermektedir:
+
+- **Clean Architecture**
+  - Domain (Entity)
+  - Application (CQRS + Behaviors)
+  - Infrastucture (MongoDB)
+  - API (Minimal API)
+- **CQRS + MediatR**
+- **MongoDB Repository Pattern**
+- **Pipeline Behaviors**
+  - LoggingBehavior
+  - ValidationBehavior
+  - PerformanceBehavior
+
+---
+
+## 🧱 3. Mimari Yapı
+
+/
+  ├── API → Minimal API + DI + Swagger
+  ├── Application → CQRS, Behaviors, Interfaces
+  ├── Domain → Entity tanımları
+  └── Infrastucture → MongoDB ve repository implementasyonu
+
+
+## 📝 4. Özellikler
+
+| Özellik | Açıklama | Endpoint |
+|--------|----------|----------|
+| Task oluştur | Yeni görev ekler | `POST /tasks` |
+| Task listesi | Tüm görevleri döner | `GET /tasks` |
+| Task güncelle | Tamamlandı bilgisini değiştirir | `PUT /tasks/{id}/status?completed=true` |
+| Task sil | Görevi siler | `DELETE /tasks/{id}` |
+
+---
+
+
+## 🧩 5. Task Modeli
+
+```json
+{
+  "id": "ObjectId",
+  "title": "string",
+  "description": "string",
+  "isCompleted": false,
+  "createdAt": "2025-01-01T00:00:00Z"
+}
+
