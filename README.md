@@ -57,3 +57,23 @@ Bu proje öğrenme amaçlı geliştirilmiş olup aşağıdaki mimari konseptleri
   "isCompleted": false,
   "createdAt": "2025-01-01T00:00:00Z"
 }
+
+## Yapım Amacım
+
+Bu proje, günümüzde sıkça kullanılan modern .NET mimarilerini deneyimlemek ve öğrenmek amacıyla geliştirilmiştir.
+Hedefim:
+
+Clean Architecture yapısını doğru şekilde uygulamak
+
+CQRS ve MediatR ile command/query ayrımını öğrenmek
+
+MongoDB ile repository pattern kullanımını görmek
+
+Pipeline Behavior mantığını kavramak
+
+Esnek, test edilebilir ve genişletilebilir bir mimari kurmak
+
+Bu proje bir “todo app” oluşturmak için değil; kurumsal mimariyi kavramak,
+servis katmanlarını ayırmak,
+bağımlılık yönlerini doğru kurmak,
+ve modern .NET uygulamalarının nasıl inşa edildiğini öğrenmek için hazırlanmıştır.
