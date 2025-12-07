@@ -4,7 +4,6 @@
 Bu proje, modern bir .NET uygulamasında **Clean Architecture**, **CQRS**, **MediatR**,  
 **MongoDB**, ve **Pipeline Behaviors** (Logging, Validation, Performance) gibi gelişmiş mimari kavramları uygulayan örnek bir Task Management API’sidir.
 
-English version is included below. 👇
 
 ---
 
